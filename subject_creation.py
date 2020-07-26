@@ -42,24 +42,33 @@ if employment_industry == "Politics":
 if employment_industry == "Finance":
     if employment_job_level == 1:
         dice = randint(1,3)
+        #dice = randint(1,4) # Proposed adding 1 new job
         if dice == 1: employment_job_title = "Analyst"
         if dice == 2: employment_job_title = "Bank Clerk"
         if dice == 3: employment_job_title = "Admin Assistant"
+        #if dice == 4: employment_job_title = "Junior Accountant"
     if employment_job_level == 2:
         dice = randint(1,2)
+        #dice = randint(1,3) # Proposed adding 1 new job
         if dice == 1: employment_job_title = "Senior Financial Analyst"
         if dice == 2: employment_job_title = "Branch Manager"
+        #if dice == 3: employment_job_title = "Senior Accountant"
     if employment_job_level == 3:
-        dice = randint(1,2)
+        dice = randint(1,2) # Proposed changing "Department Head" into "Internal Auditor"
         if dice == 1: employment_job_title = "Department Head"
+        #if dice == 1: employment_job_title = "Internal Auditor"
         if dice == 2: employment_job_title = "Manager"
     if employment_job_level == 4:
+        #dice = randint(1,2)    # Proposed moving "Department Head" into level 4
         employment_job_title = "Senior Manager"
+        #if dice == 1: employment_job_title = "Senior Manager"
+        #if dice == 2: employment_job_title = "Department Head"
     if employment_job_level == 5:
         dice = randint(1,3)
         if dice == 1: employment_job_title = "Chief Executive Officer"
         if dice == 2: employment_job_title = "Chief Financial Officer"
         if dice == 3: employment_job_title = "Chief Technology Officer"
+        #if dice == 4: employment_job_title = "Chief Operational Officer"
 
 if employment_industry == "Military Manufacturing":
     if employment_job_level == 1:
@@ -77,7 +86,7 @@ if employment_industry == "Military Manufacturing":
         dice = randint(1,3)
         if dice == 1: employment_job_title = "Senior Enginner"
         if dice == 2: employment_job_title = "Research Lab Chief"
-        if dice == 3: employment_job_title = "Manufaturing Manager"
+        if dice == 3: employment_job_title = "Manufaturing Manager" # I think this is supposed to be "Manufacturing Manager"?
     if employment_job_level == 4:
         dice = randint(1,3)
         if dice == 1: employment_job_title = "Department Chief"
@@ -92,18 +101,24 @@ if employment_industry == "Military Manufacturing":
 if employment_industry == "Civil Service":
     if employment_job_level == 1:
         dice = randint(1,3)
+        #dice = randint(1,4) # Proposed adding 1 new job
         if dice == 1: employment_job_title = "Data Entry Clerk"
         if dice == 2: employment_job_title = "Admin Assistant"
         if dice == 3: employment_job_title = "Personal Assistant"
+        #if dice == 4: employment_job_title = "Field Officer"
     if employment_job_level == 2:
         dice = randint(1,3)
+        #dice = randint(1,4) # Proposed adding 1 new job
         if dice == 1: employment_job_title = "Advisor"
         if dice == 2: employment_job_title = "Policy Advisor"
         if dice == 3: employment_job_title = "Legislative Affairs Director"
+        #if dice == 4: employment_job_title = "Senior Field Officer"
     if employment_job_level == 3:
         dice = randint(1,2)
+        #dice = randint(1,3) # Proposed adding 1 new job
         if dice == 1: employment_job_title = "Senior Advisor"
         if dice == 2: employment_job_title = "Senior Policy Advisor"
+        #if dice == 3: employment_job_title = "Internal Auditor"
     if employment_job_level == 4:
         dice = randint(1,2)
         if dice == 1: employment_job_title = "Deputy Department Head"
@@ -139,17 +154,27 @@ if employment_industry == "Technology":
 
 if employment_industry == "Journalism":
     if employment_job_level == 1:
+        #dice = randint(1,3) # Suggested Adding 2 more jobs
         employment_job_title = "Intern"
+        #if dice == 1: employment_job_title = "Intern"
+        #if dice == 2: employment_job_title = "Photographer"
+        #if dice == 3: employment_job_title = "Staff Writer"
     if employment_job_level == 2:
         dice = randint(1,4)
+        #dice = randint(1,6) # Suggested adding 2 more jobs
         if dice == 1: employment_job_title = "Junior Reporter"
         if dice == 2: employment_job_title = "Home Affairs Reporter"
         if dice == 3: employment_job_title = "Crime Correspondent"
         if dice == 4: employment_job_title = "Gossip Columnist"
+        #if dice == 5: employment_job_title = "Foreign Corrsepondent"
+        #if dice == 6: employment_job_title = "Business Columnist"
     if employment_job_level == 3:
-        dice = randint(1,2)
-        if dice == 1: employment_job_title = "Subedtor"
+        dice = randint(1,2) 
+        #dice = randint(1,4) # Suggested adding 2 more jobs
+        if dice == 1: employment_job_title = "Subedtor" #Is this "Subedtor" (intentional)? Or would it be "Subeditor"?
         if dice == 2: employment_job_title = "Leader Writer"
+        #if dice == 3: employment_job_title = "Radio Host"
+        #if dice == 4: employment_job_title = "Primetime News Presenter"
     if employment_job_level == 4:
         dice = randint(1,2)
         if dice == 1: employment_job_title = "Section Editor"
